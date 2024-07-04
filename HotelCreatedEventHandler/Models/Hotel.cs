@@ -5,10 +5,10 @@ namespace HotelCreatedEventHandler.Models;
 [DynamoDBTable("Hotels_Order_Domain")]
 public class Hotel
 {
-    [DynamoDBHashKey("userId")] public string? UserId { get; set; }
-
-    [DynamoDBRangeKey("Id")] public string? Id { get; set; }
-
+    [DynamoDBHashKey("userId")]
+    public string? UserId { get; set; }
+    [DynamoDBRangeKey("Id")]
+    public string? Id { get; set; }
     public string? Name { get; set; }
     public string? CityName { get; set; }
     public int Price { get; set; }
